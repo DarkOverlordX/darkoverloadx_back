@@ -1,24 +1,24 @@
 spring:
   datasource:
-    url: jdbc:postgresql://13.124.85.15:5432/itzipdb
-    username: itzip
-    password: overload
+    url: ${LOC_POSTGRESQL_URL}
+    username: ${LOC_POSTGRESQL_USERNAME}
+    password: ${LOC_POSTGRESQL_PASSWORD}
     driver-class-name: org.postgresql.Driver
 
   data:
     redis:
-      host: 13.124.85.15
-      port: 6379
-      password: overload
+      host: ${LOC_REDIS_HOST}
+      port: ${LOC_REDIS_PORT}
+      password: ${LOC_REDIS_PASSWORD}
 
     mongodb:
-      host: 13.124.85.15
-      port: 27017
-      username: $itzip
-      password: overload
-      database: itzip
-      authentication-database: admin
-      uri: mongodb://itzip:overload@13.124.85.15:27017
+      host: ${LOC_MONGO_HOST}
+      port: ${LOC_MONGO_PORT}
+      username: ${LOC_MONGO_USERNAME}
+      password: ${LOC_MONGO_PASSWORD}
+      database: ${LOC_MONGO_DATABASE}
+      authentication-database: ${LOC_MONGO_AUTH}
+      uri: ${LOC_MONGO_URI}
 
 server:
   port: 8082
