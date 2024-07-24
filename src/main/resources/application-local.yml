@@ -21,4 +21,4 @@ spring:
       uri: ${LOC_MONGO_URI}
 
 server:
-  port: 8082
+  port: 8080
