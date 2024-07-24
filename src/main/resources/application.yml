@@ -7,7 +7,7 @@ spring:
     show-sql: true
     database: postgresql
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
   mongodb:
     embedded:
       version: 4.0.21

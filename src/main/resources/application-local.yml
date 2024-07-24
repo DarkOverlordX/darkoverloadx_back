@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://13.124.85.15:5432/itzipdb
+    username: itzip
+    password: overload
+    driver-class-name: org.postgresql.Driver
+
+  data:
+    redis:
+      host: 13.124.85.15
+      port: 6379
+      password: overload
+
+    mongodb:
+      host: 13.124.85.15
+      port: 27017
+      username: $itzip
+      password: overload
+      database: itzip
+      authentication-database: admin
+      uri: mongodb://itzip:overload@13.124.85.15:27017
