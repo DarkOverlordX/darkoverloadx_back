@@ -19,3 +19,6 @@ spring:
       database: itzip
       authentication-database: admin
       uri: mongodb://itzip:overload@13.124.85.15:27017
+
+server:
+  port: 8082
