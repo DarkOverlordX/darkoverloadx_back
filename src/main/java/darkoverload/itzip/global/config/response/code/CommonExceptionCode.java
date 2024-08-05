@@ -63,6 +63,12 @@ public enum CommonExceptionCode implements ResponseCode {
     NOT_FOUND_USER(HttpStatus.BAD_REQUEST, "사용자를 찾을 수 없습니다."),
 
     /**
+     * Blog Error
+     */
+    // 블로그를 찾을 수 없음
+    NOT_FOUND_BLOG(HttpStatus.BAD_REQUEST, "블로그를 찾을 수 없습니다."),
+
+    /**
      * 4** client
      */
     // 400
